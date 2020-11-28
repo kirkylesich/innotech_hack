@@ -15,3 +15,9 @@ class UserPhotoSerializer(serializers.ModelSerializer):
         model = FinUser
         fields = ['photo_raw']
 
+
+class UserInfoSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = FinUser
+        fields = ['vk_id', 'fb_id']

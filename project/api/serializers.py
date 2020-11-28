@@ -12,6 +12,6 @@ class UserIdFinSerializer(serializers.ModelSerializer):
 class UserPhotoSerializer(serializers.ModelSerializer):
 
     class Meta:
-        models = FinUser
+        model = FinUser
         fields = ['photo_raw']
 
